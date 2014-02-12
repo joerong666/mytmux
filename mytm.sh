@@ -59,3 +59,8 @@ if [ "$1" = "-R52" ]; then
 	ssh -p 9922 zhengzn@10.1.74.52
 fi
 
+#remote cmd without interaction
+#ssh -p 9922 zhengzn@10.1.74.50 'ls /home/zhengzn/local/myproject'
+
+#remote cmd with interaction
+#ssh -p 9922 zhengzn@10.1.74.50 -t 'tail -f /home/zhengzn/local/myproject/tt.log'
